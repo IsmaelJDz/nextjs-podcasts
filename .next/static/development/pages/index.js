@@ -7613,7 +7613,7 @@ routes.add("index").add("channel", "/:slug.:id", "channel").add("podcast", "/:sl
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fismaeljdz7%2FDocuments%2FCursos%2FPlatzi%2Fnext%2Fpodcasts%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -7636,5 +7636,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
