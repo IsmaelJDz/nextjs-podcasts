@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Error from "./_error";
+import PodcastListWithClick from "../components/PodcastListWithClick";
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { openPodcast: null };
+  }
+
   static async getInitialProps({ query, res }) {
     let idChannel = query.id;
 
@@ -37,8 +43,16 @@ export default class extends React.Component {
     }
   }
 
+  openPodcast = (e, podcast) => {
+    e.preventDefault();
+    this.setState({
+      openPodcast: podcast
+    });
+  };
+
   render() {
     const { channel, audioClips, series, statusCode } = this.props;
+    const { openPodcast } = this.state;
 
     if (statusCode !== 200) {
       return <Error statusCode={statusCode}></Error>;
@@ -54,6 +68,8 @@ export default class extends React.Component {
             backgroundImage: `url(${channel.urls.banner_image.original})`
           }}
         />
+
+        {openPodcast && <div>Hay un podcast abierto</div>}
 
         <h1>{channel.title}</h1>
 
