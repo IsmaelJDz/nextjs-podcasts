@@ -4,6 +4,8 @@ Esta es una aplicacion creada con el framework nextJs para poder escuchar tus po
 
 ![Captura de la app](./.readme-static/PodcastNext.png)
 
+[ver la aplicación](https://y-rho.now.sh/)
+
 ## Cómo funciona?
 
 Requiere nodeJs
